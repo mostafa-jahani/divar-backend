@@ -1,5 +1,4 @@
-const { Schema } = require("mongoose");
-import { type } from './../../../node_modules/@types/whatwg-url/index.d';
+const { Schema, model } = require("mongoose");
 
 const OTPSchema = new Schema({
     code: { type: String, required: false, default: undefined },
